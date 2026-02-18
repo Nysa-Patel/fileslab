@@ -1,0 +1,4 @@
+HVAC Company, In-person, Regional
+Local Mexican Restaurant, In-person, Local
+E-commerce Clothing Brand, Subscription, Global
+bookstore, purchase, local
