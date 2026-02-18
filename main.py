@@ -4,12 +4,15 @@ Developer: Nysa Patel
 Date: 2026-02-18
 Purpose: This app manages target business data by persisting data to business_data.txt.
 """
+#def bestTool:
 
+#saving business data into the file
 def save_business_data(businesstype, salesmodel, scale):
     with open("business_data.txt", "a") as file:
         file.write(f"{businesstype}, {salesmodel}, {scale}\n")
     print("Business data saved!\n")
 
+#list of current businesses that there is data for- formatted
 def load_business_data():
     try:
         with open("business_data.txt", "r") as file:
@@ -29,6 +32,8 @@ def load_business_data():
                     print("-------------------------------")
     except FileNotFoundError:
         print("File not found.\n")
+
+#main menu for user to choose from
 def main():
     while True:
         print("\n--- Target Business Planner ----")
@@ -37,6 +42,7 @@ def main():
         print("3. Exit out of the program")
         choice = input("Which do you want to do: ")
         
+        #different choices
         if choice == "1":
             businesstype = input("Enter business type: ").strip()
             salesmodel = input("Enter sales model: ").strip()
